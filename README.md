@@ -1,0 +1,46 @@
+# Password Generator (Tkinter)
+
+A simple graphical password generator built with Python and Tkinter. It allows users to generate secure passwords with customizable options and copy them directly to the clipboard.
+
+---
+
+## Features
+
+- Easy-to-use graphical interface
+- Choose password length
+- Optional inclusion of:
+  - **Digits**
+  - **Punctuation characters**
+- Secure password generation using the `secrets` module
+- Copy the generated password to the clipboard with one click
+
+---
+
+
+## How to Run
+
+### Requirements
+
+- Python 3.x
+
+### Run the app
+
+```bash
+python password_generator.py
+```
+
+## Usage
+- Enter the desired password length.
+
+- Check the boxes to include digits and/or punctuation.
+
+- Click Generate to create a password.
+
+- Click Copy to clipboard to copy the result.
+
+---
+
+## Security
+Uses Python’s secrets module for cryptographically strong random password generation.
+
+## License
