@@ -22,6 +22,12 @@ def generate_password():
     password = generator(length_val, digits, punctuation)
     PSWD.set(password)
 
+def copy_to_clipboard():
+    password = PSWD.get()
+    if password:
+        root.clipboard_clear()
+        root.clipboard_append(password)
+        root.update()
 
 root = Tk()
 root.title("Password Generator")
@@ -51,6 +57,8 @@ ttk.Button(mainframe, text="generate", command=generate_password).grid(column=2,
 
 ttk.Label(mainframe, text="Generated password:").grid(column=1, row=5, sticky=W)
 ttk.Label(mainframe, textvariable=PSWD).grid(column=2, row=5, sticky=(W, E))
+ttk.Button(mainframe, text="Copy to clipboard", command=copy_to_clipboard).grid(column=2, row=6, sticky=W)
+
 
 for child in mainframe.winfo_children():
     child.grid_configure(padx=5, pady=5)
