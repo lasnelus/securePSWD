@@ -22,7 +22,9 @@ A simple graphical password generator built with Python and Tkinter. It allows u
 ### Requirements
 
 - Python 3.x
+- Standard Python libraries: `string`, `secrets`, `tkinter`
 
+> No third-party installations required.
 ### Run the app
 
 ```bash
@@ -43,4 +45,12 @@ python password_generator.py
 ## Security
 Uses Python’s secrets module for cryptographically strong random password generation.
 
+---
 ## License
+
+WTFPL – Do What the F*ck You Want to Public License.
+
+---
+## Author
+
+Crafted with Python and sarcasm by someone who enjoys algorithm humor. [@lasnelus](github.com/lasnelus)
